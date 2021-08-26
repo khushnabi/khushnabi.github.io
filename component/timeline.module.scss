@@ -1,0 +1,75 @@
+@import './variables.scss';
+
+
+.about {
+    
+  margin-top: 9px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+
+    color: $para-color;
+  }
+
+
+  .timeline_div {
+      display: flex;
+  }
+
+
+  .start, .end {
+    font-size: 13px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin-bottom: -8px;
+    color: $para-color;
+  }
+
+  .date {
+    width: 25.2rem;
+    
+  }
+
+
+  .timeline_line {
+      background: $primary-color;
+      padding: 2px;
+  }
+
+
+
+
+  .company {
+    text-align: center;
+    width: 21rem;
+  }
+
+
+
+  .timeline_company_line {
+    width: 55px;
+    height: 3px;
+    background: $primary-color;
+    align-self: center;
+    }
+
+
+  .timeline_company_line_dot {
+    width: 12px;
+    height: 11px;
+    background: #2f85a3;
+    align-self: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 6px 1px #8dc9de;
+    box-shadow: 0px 0px 6px 1px #8dc9de;
+}
+
+.company_name {
+    font-size: 18px;
+    margin-top: 9px;
+    text-transform: capitalize;
+    font-weight: semibold;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #525252;
+}
+

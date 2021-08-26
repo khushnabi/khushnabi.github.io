@@ -1,0 +1,112 @@
+@import './variables.scss';
+
+
+.progress_div {
+    background: #ffffff;
+    display: inline-block;
+    box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 17%);
+    border-radius: 50px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+.progress {
+    height: 10px;
+    background-color: $primary-color;
+    border-radius: 50px;
+}
+
+
+.beginner {
+    width: 20%;
+    animation: beginner 2s ;
+
+}
+
+
+@keyframes beginner {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 20%;
+    }
+}
+
+.avarage {
+    width: 40%;
+    animation: avarage 3s ;
+
+}
+
+
+@keyframes avarage {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+.good {
+    width: 60%;
+    animation: good 4s ;
+
+}
+
+
+@keyframes good {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+
+.experianced {
+    width: 80%;
+    animation: experianced 4s ;
+
+}
+
+
+@keyframes experianced {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+.excelent {
+    width: 100%;
+    animation: excelent 4s ;
+
+}
+
+
+@keyframes excelent {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.title {
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-top: 23px;
+    margin-bottom: 9px;
+    color: #615656;
+}

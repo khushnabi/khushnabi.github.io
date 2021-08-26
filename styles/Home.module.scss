@@ -1,22 +1,28 @@
-
-
-
-$primary-color: #e2a700;
-$secondary-color: lighten($primary-color, 52%);
-
-// loader variables
-
-$diameter : 100px;
-$circle-line-width:20px;
-
-
+@import "../component/variables.scss";
 
 
 .main_banner {
-  background-color: $secondary-color;
+  z-index: 10;
+  background-image: url('/images/bg.jpg');
+  width: 100%;
+  height: 50vh;
+  // background-color: $secondary-color;
   padding-top: 5rem;
   padding-bottom: 10rem;
-  vertical-align: baseline;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.main_banner::before {
+  position: absolute;
+  content: "";
+  background-color: $primary-color;
+  width: 41%;
+  height: 55%;
+  /* float: right; */
+  margin-top: -5rem;
+  margin-left: 59%;
 }
 
 
@@ -37,20 +43,38 @@ $circle-line-width:20px;
 .banner_text {
   width: 100%;
   padding: 9rem 10rem 0rem 0rem;
+
 }
 
-.banner_img_contaner {
-  width: 100%;
-  background: $primary-color;
-  border-radius: 2px;
+.banner_img_contaner::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  width: 41%;
+  height: 55%;
+  /* float: right; */
+  margin-left: -27px;
+  margin-top: -25px;
+  background: no-repeat;
+  border: 2px solid black;
 }
+
+// .banner_img_contaner {
+//   width: 100%;
+//   background: $primary-color;
+//   border-radius: 2px;
+// }
+
+
+
 
 .banner_img_contaner img{
   width: 100%;
-  
-  margin-left: -44px;
-  margin-top: 43px;
-  margin-bottom: -40px;
+  z-index: 1;
+  position: relative;
+  // margin-left: -44px;
+  // margin-top: 43px;
+  // margin-bottom: -40px;
   border-radius: 3px;
   -webkit-box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 15%);
   box-shadow: 0px 0px 7px 2px rgb(0 0 0 / 15%);
@@ -62,9 +86,21 @@ $circle-line-width:20px;
   font-size: 30px;
     margin: 0;
     letter-spacing: 1px;
-    color: $primary-color;
+    color: black;
 }
 
+
+.third_heading {
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  border-bottom: 3px solid $primary-color;
+  width: 5%;
+  padding-bottom: 5px;
+}
 
 .container {
   width: 80%;
@@ -75,7 +111,7 @@ $circle-line-width:20px;
   margin-top: 12px;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #79766c;
+  color: $para-color;
 }
 
 
@@ -83,10 +119,12 @@ $circle-line-width:20px;
 
 .profile_section {
   display: flex;
+  justify-content: space-between;
 }
 
 .profile_section > div {
-  flex: 1;
+  width: 45%;
+
 }
 
 
@@ -123,266 +161,41 @@ $circle-line-width:20px;
   padding: 6px 15px;
   border-radius: 19px;
   font-weight: bold;
-  box-shadow: -1px 0px 6px lighten($primary-color, 40%);
+  box-shadow: -1px 0px 6px $secondary-color;
   background: $primary-color;
-  color: $secondary-color;
+  color: #fff;
 }
 
 
-// loader css 
-
-
-// .loader {
-//   position: relative;
-//   height: $diameter;
-//   width: $diameter;
-//   overflow: hidden;
-// }
-
-// .circle {
-//   position: relative;
-// }
-
-// .outer_circle {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: $diameter;
-//   width: $diameter;
-//   border-radius: 50%;
-//   background-color: red;
-// }
-
-
-// .inner_circle {
-//     position: absolute;
-//     top: $circle-line-width;
-//     left: $circle-line-width;
-//     height: $diameter - 2 * $circle-line-width;
-//     width: $diameter - 2 * $circle-line-width;
-//     background: #fff;
-//     border-radius: 50%;
-// }
-
-// .box {
-//   position: absolute;
-//   height: $diameter/2;
-//   width: $diameter/2;
-//   background: #fff;
-//   // border-radius: 50%;
-// }
 
 
 
-// .box_top_left {
-//   left: 0;
-//   top: 0;
-//   transform-origin: 100% 100%;
-//   animation: show-top-left 2s linear forwards;
-// }
-
-// .box_top_right {
-//   top: 0;
-//   left: $diameter/2;
-//   transform-origin:0 100%;
-//   animation: show-top-right 2s linear 6s forwards;
-// }
 
 
-
-// .box_bottom_left {
-//   left: 0;
-//   top: $diameter/2;
-//   transform-origin: 100% 0;
-//   animation: show-bottom-left 2s linear 2s forwards;
-// }
-
-// .box_bottom_right {
-//   left: $diameter/2;
-//   top: $diameter/2;
-//   transform-origin: 0 0;
-//   animation: show-bottom-right 2s linear 4s forwards;
-// }
-
-// @keyframes show-top-left {
-//    0% {
-
-//      transform: skewX(0deg);
-//    }
-//    99.9% {
-//      height: $diameter/2;
-//      width: $diameter/2;
-//    }
-//    100% {
-//      height: 0;
-//      width: 0;
-//      transform: skewX(90deg);
-//    }
-// }
+// experiance skill section
 
 
-// @keyframes show-bottom-left {
-//   0% {
-//     transform: skewy(0deg);
-//   }
-//   99.9% {
-//     height: $diameter/2;
-//     width: $diameter/2;
-//   }
-//   100% {
-//     height: 0;
-//     width: 0;
-//     transform: skewy(-90deg);
-//   }
-// }
-
-
-// @keyframes show-bottom-right {
-//   0% {
-//     transform: skewx(0deg);
-//   }
-//   99.9% {
-//     height: $diameter/2;
-//     width: $diameter/2;
-//   }
-//   100% {
-//     height: 0;
-//     width: 0;
-//     transform: skewx(90deg);
-//   }
-// }
-
-// @keyframes show-top-right {
-//   0% {
-//     transform: skewy(0deg);
-//   }
-//   99.9% {
-//     height: $diameter/2;
-//     width: $diameter/2;
-//   }
-//   100% {
-//     height: 0;
-//     width: 0;
-//     transform: skewy(-90deg);
-//   }
-// }
-
-
-
-// .beginner .box_bottom_left {
-//   transform-origin: none !important;
-//   animation: none !important;
-
-
-// }
-
-// .beginner .box_bottom_right {
-//   transform-origin: none !important;
-//   animation: none !important;
-// }
-
-// .beginner .box_top_right {
-//   transform-origin: none !important;
-//   animation: none !important;
-// }
-
-
-// .experianced .box_top_right {
-//   transform-origin: none !important;
-//   animation: none !important;
-// }
-
-
-// .avarage .box_bottom_right {
-//   transform-origin: none !important;
-//   animation: none !important;
-// }
-
-
-// .avarage .box_top_right {
-//   transform-origin: none !important;
-//   animation: none !important;
-// }
-
-
-
-// another loader
-
-.circular {
-   height: $diameter;
-   width: $diameter;
-   position: relative;
-   border-radius: 50%;
-  //  transform: scale(2);
+.experiance_skill {
+  display: flex;
+  justify-content: space-between;
 }
 
-.circular .inner {
-  // display: none;
-  position: absolute;
-  z-index: 6;
-  top: 50%;
-  left: 50%;
-  height: $diameter - $circle-line-width;
-  width: $diameter - $circle-line-width;
- margin: -40px 0 0 -40px;
-  background: #fff;
-  border-radius: 100%;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+.experiance_skill >div{
+  width: 45%;
+}
+
+.skill >div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
 }
 
 
-.circle .bar {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  background: #dad5d5;
-  -webkit-border-radius:100%;
-  clip: rect(0px, 100px, 100px, 50px);
+.laguage {
+  display: flex;
+  justify-content: space-between;
 }
 
-.circle .bar .progress {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  -webkit-border-radius:100%;
-  clip: rect(0px, 50px, 100px, 0px);
-  background: $primary-color;
-}
-
-.circle .left .progress {
-  z-index: 1;
-  animation: left 2s linear both;
-}
-
-
-@keyframes left {
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
-.circle .right  {
-  z-index: 3;
-  transform: rotate(180deg);
-}
-
-.circle .right .progress {
-  animation: right 2s linear both;
-  animation-delay: 2s;
-
-}
-
-@keyframes right { 
-  100% {
-    transform: rotate(180deg);
-  }
-  
-}
-
-.progress_container {
-  background: #ffffff;
-  display: inline-block;
-  box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 17%);
-  border-radius: 50%;
-  padding: 8px 8px;
+.laguage > div {
+  width: 45%;
 }

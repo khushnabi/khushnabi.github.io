@@ -1,0 +1,235 @@
+@import './variables.scss';
+.circular {
+    height: $diameter;
+    width: $diameter;
+    position: relative;
+    border-radius: 50%;
+   //  transform: scale(2);
+ }
+ 
+ .circular .inner {
+   position: absolute;
+   z-index: 6;
+   top: 50%;
+   left: 50%;
+   height: $diameter - $circle-line-width;
+   width: $diameter - $circle-line-width;
+  margin: -40px 0 0 -40px;
+   background: #fff;
+   border-radius: 100%;
+   // box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);#79766c
+ }
+ 
+ 
+ .circle .bar {
+   position: absolute;
+   height: 100px;
+   width: 100px;
+   background: #dad5d552;
+   -webkit-border-radius:100%;
+   clip: rect(0px, 100px, 100px, 50px);
+ }
+ 
+ .circle .bar .progress {
+   position: absolute;
+   height: 100px;
+   width: 100px;
+   -webkit-border-radius:100%;
+   clip: rect(0px, 50px, 100px, 0px);
+   background: $primary-color;
+ }
+ 
+
+ 
+ 
+ .circle .right  {
+   z-index: 3;
+   transform: rotate(180deg);
+ }
+ 
+//  .circle .right .progress {
+//    animation: right 2s linear both;
+//    animation-delay: 2s;
+ 
+//  }
+
+
+// .circle .left .progress {
+//     z-index: 1;
+//     animation: left 2s linear both;
+//   }
+
+
+  
+// beginner animation
+
+.circle .right .beginner {
+    animation: beginner-right 2s linear both;
+      animation-delay: 2s;
+}
+
+
+.circle .left .beginner {
+    animation: beginner-left 2s linear both;
+    // animation-delay: 2s;
+}
+
+
+
+
+ @keyframes beginner-right {
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+
+  @keyframes beginner-left {
+    100% {
+      transform: rotate(60deg);
+    }
+  }
+  
+  
+//   avarage animation
+
+.circle .right .avarage {
+    animation: avarage-right 2s linear both;
+      animation-delay: 2s;
+}
+
+
+.circle .left .avarage {
+    animation: avarage-left 2s linear both;
+    // animation-delay: 2s;
+}
+
+
+
+
+ @keyframes avarage-right {
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+
+  @keyframes avarage-left {
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+
+
+//   good animation
+
+.circle .right .good {
+    animation: good-right 2s linear both;
+      animation-delay: 2s;
+}
+
+
+.circle .left .good {
+    animation: good-left 2s linear both;
+    // animation-delay: 2s;
+}
+
+
+
+
+ @keyframes good-right {
+    100% {
+      transform: rotate(50deg);
+    }
+  }
+  
+
+
+  @keyframes good-left {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+
+//   experianced animation
+
+.circle .right .experianced {
+    animation: experianced-right 2s linear both;
+      animation-delay: 2s;
+}
+
+
+.circle .left .experianced {
+    animation: experianced-left 2s linear both;
+    // animation-delay: 2s;
+}
+
+
+
+
+ @keyframes experianced-right {
+    100% {
+      transform: rotate(120deg);
+    }
+  }
+  
+
+
+  @keyframes experianced-left {
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+//   expert
+.circle .right .expert {
+    animation: expert-right 2s linear both;
+      animation-delay: 2s;
+}
+
+
+.circle .left .expert {
+    animation: expert-left 2s linear both;
+    // animation-delay: 2s;
+}
+
+
+
+
+ 
+ @keyframes expert-right {
+   100% {
+     transform: rotate(180deg);
+   }
+ }
+ 
+ 
+ @keyframes expert-left { 
+   100% {
+     transform: rotate(180deg);
+   }
+   
+ }
+ 
+ 
+ .progress_container {
+   background: #ffffff;
+   display: inline-block;
+   box-shadow: 0px 0px 8px 3px rgb(0 0 0 / 17%);
+   border-radius: 50%;
+   padding: 4px 4px;
+ }
+ 
+ 
+ .number {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 10;
+   font-size: 16px;
+   color: $para-color;
+ }

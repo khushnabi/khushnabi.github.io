@@ -1,6 +1,7 @@
-import Loader from "./Loader";
 import classes from "../styles/Home.module.scss"
 import LoaderAgain from "./LoaderAgain"
+import TimeLine from "./TimeLine"
+import Progress from "./Progress"
 
 // import styles from '../styles/Home.module.scs'
 
@@ -32,13 +33,13 @@ export default function Banner() {
     <div className="spacer container">
     <div className={classes.profile_section}>
         <div className={classes.profile}>
-          <h1 className={classes.second_heading}>Profile</h1>
+          <h1 className={classes.third_heading}>Profile</h1>
           <p className={classes.about}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo fuga sed sit fugit voluptate corrupti quis totam modi sapiente, delectus laborum. Exercitationem rem quis ratione libero repudiandae obcaecati quasi accusamus?</p>
 
         </div>
         
         <div className={classes.education}>
-        <h1 className={classes.second_heading}>Education</h1>
+        <h1 className={classes.third_heading}>Education</h1>
           <div className={classes.education_specific}>
             <div>
                 <button className={classes.badge}>2014-2020</button>
@@ -66,16 +67,66 @@ export default function Banner() {
     </div>
 
     <div className="spacer container">
-    <Loader></Loader>
+      <div className={classes.experiance_skill}>
+        
+       <div className={classes.experiance}>
+       <h1 className={classes.third_heading}>experiance</h1>
+       <TimeLine />
 
-    <div className="spacer">
-    <LoaderAgain />
-    </div>
-    
-    
+       </div>
+        <div className={classes.skill}>
+        <h1 className={classes.third_heading}>skill</h1>
+          <div>
+            <div>
+              <LoaderAgain skill='Html' percentage='experianced'/>
+            </div>
+            <div>
+              <LoaderAgain skill='css' percentage='good'/>
+            </div>
+            <div>
+              <LoaderAgain skill='javascript' percentage='good'/>
+            </div>
+           
+            
+          </div>
+          <div>
+            <div>
+              <LoaderAgain skill='vue' percentage='avarage'/>
+            </div>
+            <div>
+              <LoaderAgain skill='xd' percentage='good'/>
+            </div>
+            <div>
+              <LoaderAgain skill='react' percentage='beginner'/>
+            </div>
+           
+          </div>
+
+        </div>
+      </div>
+
+   
+  
+   
 
     </div>
+
+    <div className="container spacer"> 
+     
+      <div className={classes.laguage}>
+          <div>
+          <h1 className={classes.third_heading}>language</h1>
+          
+            <Progress title='hindi' percentage="experianced"/>
+            <Progress title='english' percentage="avarage"/>
+          </div>
+          <div>
+           
+            </div>
+      </div>
+
     </div>
+  </div>
     
   )
 }
