@@ -9,7 +9,7 @@ export default function Banner() {
   return (
     <div>
    
-    <div className={classes.main_banner}>
+    <div className={`spacer ${classes.main_banner}`}>
         <div className={classes.container}>
           <div className={classes.banner_content}>
             <div className={classes.banner_text}>
