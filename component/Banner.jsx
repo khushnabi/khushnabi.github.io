@@ -9,19 +9,22 @@ export default function Banner() {
   return (
     <div>
    
-    <div className={`spacer ${classes.main_banner}`}>
-        <div className={classes.container}>
+    <div className={` ${classes.main_banner}`}>
+    <div className={classes.image_background}></div>
+
+        <div className={` spacer ${classes.container}`}>
           <div className={classes.banner_content}>
+            <div className={classes.banner_img_contaner}>
+            
+               <img src="/images/hacker.jpg" alt="sdfasdfa" />
+          </div>
             <div className={classes.banner_text}>
               <h1 className={classes.heading}>khushnabi</h1>
               <h4 className={classes.second_heading}>ui/ux developer</h4>
               <p className={classes.about}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam voluptatum incidunt! Enim est quos distinctio dolore. M voluptatum incidunt! Enim est quos distinctio dolore. M</p>
 
             </div>
-           <div className={classes.banner_img_contaner}>
           
-              <img src="/images/hacker.jpg" alt="sdfasdfa" />
-            </div>
 
           </div>
 

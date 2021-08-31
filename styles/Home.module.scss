@@ -3,26 +3,30 @@
 
 .main_banner {
   z-index: 10;
-  background-image: url('/images/bg.jpg');
   width: 100%;
-  height: inherit;
-  // background-color: $secondary-color;
-
+  height: 80vh;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  background: $light-color;
 }
 
-
-.main_banner::before {
+.image_background {
+  background: #2f85a3;
+  width: 29%;
+  height: 80%;
   position: absolute;
-  content: "";
-  background-color: $primary-color;
-  width: 41%;
-  height: 55%;
-  /* float: right; */
-  margin-top: -5rem;
-  margin-left: 59%;
 }
+
+// .main_banner::before {
+//   position: absolute;
+//   content: "";
+//   background-color: $primary-color;
+//   width: 41%;
+//   height: 55%;
+//   /* float: right; */
+//   margin-top: -5rem;
+//   margin-left: 59%;
+// }
 
 
 .heading {
@@ -36,40 +40,56 @@
 
 .banner_content {
   display: flex;
+  justify-content: space-between;
   
 }
 
 .banner_text {
   width: 100%;
-  padding: 9rem 10rem 0rem 0rem;
+  // padding: 9rem 10rem 0rem 0rem;
+  align-self: center;
 
 }
 
-.banner_img_contaner::before {
-  position: absolute;
-  content: "";
-  background-color: black;
-  width: 41%;
-  height: 55%;
-  /* float: right; */
-  margin-left: -27px;
-  margin-top: -25px;
-  background: no-repeat;
-  border: 2px solid black;
-}
+
+
+
+// .banner_img_contaner::before {
+//   position: absolute;
+//   content: "";
+//   background-color: black;
+//   width: 41%;
+//   height: 55%;
+//   /* float: right; */
+//   margin-left: -27px;
+//   margin-top: -25px;
+//   background: no-repeat;
+//   border: 2px solid black;
+// }
 
 // .banner_img_contaner {
 //   width: 100%;
 //   background: $primary-color;
 //   border-radius: 2px;
+
+@media (max-width: 480px) {
+  
+   
+}
 // }
 
 
 
 
 .banner_img_contaner img{
-  width: 100%;
+  width: 80%;
+
+  @media (max-width: 480px) {
+    
+     
+  }
   z-index: 1;
+  height: 64vh;
   position: relative;
   // margin-left: -44px;
   // margin-top: 43px;
@@ -109,8 +129,9 @@
 .about {
   margin-top: 12px;
   font-size: 16px;
-  letter-spacing: 1px;
-  color: $para-color;
+  letter-spacing: 1.3px;
+  color: #79766c;
+  line-height: 1.8em;
 }
 
 
@@ -197,4 +218,250 @@
 
 .laguage > div {
   width: 45%;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  
+   .banner_content {
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .heading {
+     font-size: 30px;
+     margin-top: 1rem;
+   }
+
+   .second_heading {
+     font-size: 20px;
+   }
+
+   .banner_content img {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+   }
+
+   .image_background {
+     display: none;
+   }
+
+   .profile_section {
+ 
+    flex-direction: column;
+  
+   }
+
+   .profile_section div {
+     width: 100%;
+   }
+
+
+   .profile_section >div:last-child {
+  margin-top: 2rem;
+    
+    margin-left: 0%;
+
+   }
+
+
+   .education_specific div:first-child {
+    width: 38%;
+    align-self: center;
+   }
+
+   .experiance_skill {
+     flex-direction: column;
+     margin-top: -4rem;
+   }
+   .experiance_skill >div {
+     width: 100%;
+   }
+
+   .experiance_skill >div:last-child {
+    margin-top: 4rem;
+  }
+
+  .laguage {
+    margin-top: -4rem;
+  }
+  .education_specific button {
+    margin: 0;
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .banner_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin-top: 1rem;
+  }
+
+  .second_heading {
+    font-size: 20px;
+  }
+
+  .banner_content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .image_background {
+    display: none;
+  }
+
+  .profile_section {
+
+   flex-direction: column;
+ 
+  }
+
+  .profile_section div {
+    width: 100%;
+  }
+
+
+  .profile_section >div:last-child {
+ margin-top: 2rem;
+   
+   margin-left: 0%;
+
+  }
+
+
+  .education_specific div:first-child {
+        width: 25%;
+   align-self: center;
+  }
+
+  .experiance_skill {
+    flex-direction: column;
+    margin-top: -4rem;
+  }
+  .experiance_skill >div {
+    width: 100%;
+  }
+
+  .experiance_skill >div:last-child {
+   margin-top: 4rem;
+ }
+
+ .laguage {
+   margin-top: -4rem;
+ }
+
+ .education_specific button {
+  margin: 0;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .banner_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin-top: 1rem;
+  }
+
+  .second_heading {
+    font-size: 20px;
+  }
+
+  .banner_content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .image_background {
+    display: none;
+  }
+
+  .profile_section {
+
+   flex-direction: column;
+ 
+  }
+
+  .profile_section div {
+    width: 100%;
+  }
+
+
+  .profile_section >div:last-child {
+ margin-top: 2rem;
+   
+   margin-left: 0%;
+
+  }
+
+
+  .education_specific div:first-child {
+    width: 20%;
+
+   align-self: center;
+  }
+
+  .education_specific div:last-child {
+    width: 80%;
+
+  }
+
+  .experiance_skill {
+    flex-direction: column;
+    margin-top: -4rem;
+  }
+  .experiance_skill >div {
+    width: 100%;
+  }
+
+  .experiance_skill >div:last-child {
+   margin-top: 4rem;
+ }
+
+ .laguage {
+   margin-top: -4rem;
+}
+
+.education_specific button {
+  margin: 0;
+}
+
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+  .education_specific div:first-child {
+    width: 30%;
+
+  }
+
+
+
+
+}
+
+
+@media (min-width: 1281px) {
+  .education_specific div:last-child {
+    width: 70%;
+
+  }
+
 }
