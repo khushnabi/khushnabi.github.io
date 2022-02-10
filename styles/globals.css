@@ -9,8 +9,8 @@ body {
 
 
 .spacer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 
@@ -19,3 +19,59 @@ body {
   margin: auto;
 }
 
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
+
+#hand-rotate {
+  animation: hand_rotate 0.6s infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+  
+
+}
+#hair {
+  animation: hair 1s infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+@keyframes hair {
+  from {
+    transform: rotateZ(5deg)
+  }
+  to {
+    transform: rotateZ(0deg)
+  }
+
+  
+}
+
+#typing_name {
+  animation: typing_name 0.2s  infinite alternate ;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+
+@keyframes hand_rotate {
+  from {
+    transform: rotateZ(10deg)
+  }
+  to {
+    transform: rotateZ(-20deg)
+  }
+
+  
+}
+@keyframes typing_name {
+  from {
+    transform: rotateZ(-5deg)
+  }
+  to {
+    transform: rotateZ(3deg)
+  }
+
+  
+}

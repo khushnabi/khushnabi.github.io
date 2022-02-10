@@ -11,7 +11,7 @@ export default function Progress({ title, percentage }) {
   console.log({inViewport})
   return (
     <>
-        <h3 className={classes.title}>{title}</h3>
+    <h3 className={classes.title}>{title}</h3>
         <div ref={ref} className={clsx(classes.progress_div, {[classes.animate]: inViewport})} >
             <div className={`${classes.progress} ${classes[percentage]}`}>
 

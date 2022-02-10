@@ -1,6 +1,83 @@
 @import './variables.scss';
 
 
+.timeline_div_container {
+  display: flex;
+}
+
+.my_position {
+  margin-top: 1rem;
+  font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: -6px;
+    letter-spacing: 1px;
+}
+
+.company_section >div{
+  padding-right: 3rem;
+}
+.company_section_odd >div{
+  padding-left: 3rem;
+  padding-right: 0;
+}
+
+.timeline_empty_div::before {
+  content: "";
+  width: 2px;
+  position: absolute;
+  left: -2px;
+  height: 100%;
+  background: $primary-color;
+
+}
+.timeline_empty_div_odd::before {
+  right: 0 ;
+  left: inherit;
+}
+.company_section::after {
+  content: "";
+  height: 0.7rem;
+  width: 0.7rem;
+  right: 2.4rem;
+  border-radius: 50%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+    box-shadow: 0px 0px 6px 1px $secondary-color;
+  background: $primary-color;
+}
+
+.company_section_odd::after {
+  left: 2.4rem;
+}
+
+.company_section::before {
+  content: "";
+  height: 3px;
+  width: 3rem;
+  right: 0rem;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  background: $primary-color;
+}
+
+.company_section_odd::before {
+  left: 0rem;
+  height: 3px !important;
+}
+
+.timeline_div_container >div {
+  flex: 1;
+  position: relative;
+  text-align: center;
+
+}
+
+
 .about {
     
   margin-top: 9px;
@@ -56,15 +133,15 @@
   .timeline_company_line_dot {
     width: 12px;
     height: 11px;
-    background: #2f85a3;
+    background: $primary-color;
     align-self: center;
     border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 6px 1px #8dc9de;
-    box-shadow: 0px 0px 6px 1px #8dc9de;
+    // -webkit-box-shadow: 0px 0px 6px 1px $light-color;
+    box-shadow: 0px 0px 6px 1px $secondary-color;
 }
 
 .company_name {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 9px;
     text-transform: capitalize;
     font-weight: semibold;
@@ -73,3 +150,43 @@
     color: #525252;
 }
 
+@media (max-width: 480px) {
+  .timeline_div_container >div {
+    text-align: left !important;
+}
+.timeline_empty_div{
+  display: none;
+}
+.company_section::before {
+  left: 0;
+  width: 2rem;
+
+}
+
+.timeline_div_container {
+  position: relative;
+}
+
+.timeline_div_container::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2.5px;
+  left: 0;
+  background-color: $primary-color;
+}
+
+.company_section > div {
+  padding-right: 0;
+  padding-left: 3.5rem;
+  padding-bottom: 3rem;
+}
+
+
+
+
+
+.company_section::after {
+  left: 2rem;
+}
+}
