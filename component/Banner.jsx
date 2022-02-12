@@ -12,9 +12,9 @@ export default function Banner() {
    
     <div className={` ${classes.main_banner}`}>
     <div className="container spacer">
-    <div className={classes.banner_name}>
-          <p>Hello, my name is</p>
-          <h1>khushnabi</h1>
+    <div className={`${classes.banner_name} ${classes.web} `}>
+          <p>Hii, my name is</p>
+          <h1>Khushnabi</h1>
           <h3>And I'm a UI/UX Developer</h3>
 
       </div>
@@ -150,6 +150,12 @@ export default function Banner() {
 </svg>
 
 
+
+      </div>
+      <div className={`${classes.banner_name} ${classes.mobile} `}>
+          <p>Hii, my name is</p>
+          <h1>Khushnabi</h1>
+          <h3>And I'm a UI/UX Developer</h3>
 
       </div>
     </div>
