@@ -72,7 +72,7 @@ align-self: center;
 
 
 .about_me>div:first-child svg {
-  width: 90%;
+  width: 100%;
   position: relative;
 }
 .banner_name h1{
@@ -327,16 +327,7 @@ margin-left: 3rem;
 
 
 
-@media (max-width: 393px) {
-  .typing_name_position {
-    width: 5rem;
-    height: 4rem;
-    top: 6rem;
-    font-size: 14px;
-    left: 9.1rem;
-    padding: 1rem 0.5rem
-}
-}
+
 
 
  @media only screen and (max-width: 768px) {
@@ -377,6 +368,9 @@ margin-left: 3rem;
   .about_me > div:first-child {
     padding: 0;
     margin-bottom: -3rem;
+  }
+  .about_me > div:first-child svg {
+    width: 90%;
   }
   .about_me {
     flex-direction: column;
@@ -463,139 +457,5 @@ margin-left: 3rem;
 
 
 }
-
-
-// @media (min-width: 481px) and (max-width: 767px) {
-
-//   .laguage {
-//     flex-direction: column;
-//   }
- 
-//   .banner_content {
-//     flex-direction: column;
-//     text-align: center;
-//   }
-
-//   .heading {
-//     font-size: 30px;
-//     margin-top: 1rem;
-//   }
-
-//   .second_heading {
-//     font-size: 20px;
-//   }
-
-//   .banner_content img {
-//     width: 150px;
-//     height: 150px;
-//     border-radius: 50%;
-//   }
-
-//   .image_background {
-//     display: none;
-//   }
-
-//   .profile_section {
-
-//    flex-direction: column;
- 
-//   }
-
-
-
-//   .profile_section >div:last-child {
-//  margin-top: 2rem;
-   
-//    margin-left: 0%;
-
-//   }
-
-
-
-//   .experiance_skill {
-//     flex-direction: column;
-//     margin-top: -4rem;
-//   }
-//   .experiance_skill >div {
-//     width: 100%;
-//   }
-
-//   .experiance_skill >div:last-child {
-//    margin-top: 4rem;
-//  }
-
-//  .laguage {
-//    margin-top: -4rem;
-//  }
-
-// }
-
-
-// @media (min-width: 768px) and (max-width: 1024px){
-//   .banner_content {
-//     flex-direction: column;
-//     text-align: center;
-//   }
-
-//   .heading {
-//     font-size: 30px;
-//     margin-top: 1rem;
-//   }
-
-//   .second_heading {
-//     font-size: 20px;
-//   }
-
-//   .banner_content img {
-//     width: 150px;
-//     height: 150px;
-//     border-radius: 50%;
-//   }
-
-//   .image_background {
-//     display: none;
-//   }
-
-//   .profile_section {
-
-//    flex-direction: column;
- 
-//   }
-
-
-
-
-//   .profile_section >div:last-child {
-//  margin-top: 2rem;
-   
-//    margin-left: 0%;
-
-//   }
-
-
-
-
-//   .experiance_skill {
-//     flex-direction: column;
-//     margin-top: -4rem;
-//   }
-//   .experiance_skill >div {
-//     width: 100%;
-//   }
-
-//   .experiance_skill >div:last-child {
-//    margin-top: 4rem;
-//  }
-
-//  .laguage {
-//    margin-top: -4rem;
-// }
-
-
-// }
-
-
-
-
 
 
