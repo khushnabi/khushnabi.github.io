@@ -1,0 +1,53 @@
+
+@import './variables.scss';
+
+.service_box {
+// background-color: black;
+}
+
+.para {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    letter-spacing: 1.3px;
+    color: #2d2b21;
+    line-height: 1.8em;
+}
+
+.service_box {
+
+    background: #fff;
+    width: 13rem;
+    -webkit-box-shadow: 0px 2px 20px 4px rgb(235 86 107 / 39%);
+    box-shadow: 0px 2px 20px 4px rgb(235 86 107 / 39%);
+    padding: 2rem 1rem;
+    align-self: center;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.row_one {
+    // margin-left: 5rem;
+    margin-top: -9rem;
+}
+.row_two {
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .service_box {
+      width: inherit;
+  }
+
+  .para {
+      font-size: 14px;
+  }
+
+  .second_heading {
+      font-size: 17px;
+  }
+  
+  }

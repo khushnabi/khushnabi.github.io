@@ -7,18 +7,27 @@ body {
  
 }
 
+.position-relative {
+  position: relative;
+}
 
 .spacer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
+.mt-5 {
+  margin-top: 5rem;
+}
 
 .container {
   width: 80%;
   margin: auto;
 }
 
+.d-flex {
+  display: flex;
+}
 @media (max-width: 480px) {
   .container {
     width: 90%;

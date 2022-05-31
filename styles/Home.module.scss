@@ -1,5 +1,73 @@
 @import "../component/variables.scss";
 
+.service-box {
+  background: black;
+}
+.service_section_div {
+margin-top: 5rem;
+}
+
+.contact_info {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 1rem;
+}
+.small_head {
+  margin-top: 1.5rem;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  letter-spacing: 1px;
+  line-height: 1.8em;
+}
+.small_para {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  letter-spacing: 1.3px;
+  color: #2d2b21;
+  line-height: 1.8em;
+}
+
+.service_png svg{
+  width: 48rem;
+  height: 50rem;
+  position: absolute;
+  right: 0;
+  top: -8rem;
+}
+
+.service_section {
+display: flex;
+position: relative;
+padding-bottom: 5rem;
+justify-content: space-between;
+}
+.service_section>div:last-child {
+  margin-left: 5rem;
+}
+.contact_info >div {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact_info >div h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: $primary-color;
+  margin-top: 0;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  
+}
+
+.contact_info >div p{
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+  
 
 .mobile {
   display: none;
@@ -25,7 +93,7 @@
 }
 
 .about_me>div:first-child {
-  padding-right: 9rem;
+  padding-right: 6rem;
 }
 
 .about_me>div:last-child {
@@ -332,6 +400,18 @@ margin-left: 3rem;
 
  @media only screen and (max-width: 768px) {
 
+  .service_section {
+    flex-direction: column;
+  }
+  .service_section>div:last-child {
+    margin-left: 0rem;
+  }
+
+  .service_png svg {
+bottom: 1rem !important;
+top: inherit;
+  }
+
   .banner_name {
     // text-align: center;
     margin-top: 2rem;
@@ -427,6 +507,7 @@ margin-left: 3rem;
     margin-left: 0%;
 
    }
+
 
 
 

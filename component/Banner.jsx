@@ -3,6 +3,7 @@ import LoaderAgain from "./LoaderAgain"
 import TimeLine from "./TimeLine"
 import Progress from "./Progress"
 import AutoType from './AutoType'
+import Service from "./service"
 
 // import styles from '../styles/Home.module.scs'
 
@@ -16,7 +17,7 @@ export default function Banner() {
           <p>Hii, my name is</p>
           <h1>Khushnabi</h1>
           <h3>And I'm a UI/UX Developer</h3>
-
+        
       </div>
       <div>
       <svg width="612" height="416" viewBox="0 0 612 416" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +185,7 @@ with my company.</p>
       <div className={classes.experiance_skill}>
         
        <div className={classes.experiance}>
-       <h1 className={classes.third_heading}>experiance</h1>
+       <h1 className={classes.third_heading}>experiences</h1>
        <TimeLine />
 
        </div>
@@ -207,16 +208,9 @@ with my company.</p>
             </div>
             <div>
             <Progress title='React' percentage="beginner"/>
-
-
             </div>
             <div>
             <Progress title='XD' percentage="good"/>
-
-            </div>
-            <div>
-            <Progress title='ajax' percentage="avarage"/>
-
             </div>
             <div>
             <Progress title='figma' percentage="good"/>
@@ -428,13 +422,29 @@ with my company.</p>
             Computer have been my passion from ever. I could spend hours 
             learning about coding and designing. However,
             this passion got wings when i grabbed a job as UI/UX designer and developer.
-            Though money cannot be totally ignored, even if it wasn't there, I Couldn't be separated from designing and coding. I think i can totally relate to how
+            Though money cannot be totally ignored, even if it wasn't there, I Couldn't be separated from designing and coding. I think i can totally relate to how!
           </p>
+          <div className={classes.contact_info}> 
+            <div>
+              <h4 className={classes.contact_name}>Phone</h4>
+              <p className={classes.contact_detail}>9661937073</p>
+            </div>
+            <div>
+              <h4 className={classes.contact_name}>Email</h4>
+              <p className={classes.contact_detail}>p.khushnabi@gmail.com</p>
+            </div>
+            <div>
+              <h4 className={classes.contact_name}>Github</h4>
+              <p className={classes.contact_detail}><a href="https://github.com/khushnabi">github.com/khushnabi</a></p>
+            </div>
+          </div>
 
         </div>
         </div>
     </div>
 </div>
+
+
 
  <div className={classes.education_border}>
  <div className={classes.education_section}>
@@ -482,8 +492,59 @@ Bihar, (BA) Bachelors of Arts (Honours) English</p>
     </div>
   </div>
  </div>
+ <div style={{marginTop:"5rem"}} className="position-relative ">
+   <div className={classes.service_png}>
+     <svg width="868" height="923" viewBox="0 0 868 923" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M681.212 160.664C760.101 73.3897 838.608 17.1904 868 0V852.907C822.433 905.801 695.925 979.852 554.425 852.907C377.55 694.227 381.202 737.864 210.067 719.021C38.9309 700.177 -9.26584 662.381 1.40661 524.95C10.0679 413.417 194.24 328.766 288.852 301.989C386.768 291.245 602.322 247.938 681.212 160.664Z" fill="url(#paint0_linear_214_118)"/>
+<defs>
+<linearGradient id="paint0_linear_214_118" x1="2.85038" y1="652.841" x2="810.815" y2="628.549" gradientUnits="userSpaceOnUse">
+<stop offset="0.0170418" stopColor="#ED735A"/>
+<stop offset="1" stopColor="#EB526D"/>
+</linearGradient>
+</defs>
+</svg>
+     </div>
+      <div className="container d-flex">
+        <div className={classes.service_section}>
+        <div>
+        <h1 className={classes.third_heading}>Programing_Languages</h1>
+        <h4 className={classes.small_head}>Javascript</h4>
+        <li className={classes.small_para}>
+          Total workings experience of 3 month.
+          </li>
+          <li className={classes.small_para}>
+          Frameworks: React, Vue.
+          </li>
+          <h4 className={classes.small_head}>React</h4>
+        <p className={classes.small_para}>
+          I have basic understanding of React js and Next js
+          </p>
+          <h4 className={classes.small_head}>Vue</h4>
+        <p className={classes.small_para}>
+        Total workings experience of 6 month. and my favorite frontend framework is Vue js 
+          </p>
+         
+          <h4 className={classes.small_head}>HTML & Css</h4>
+        <p className={classes.small_para}>
+        Total workings experience of 1 year.
+          </p>
+          <h4 className={classes.small_head}>Figma & xd</h4>
+        <p className={classes.small_para}>
+        Total workings experience of 1 year.
+          </p>
+        
+        </div>
+        <div className={classes.service_section_div}>
+    
 
-   
+        <h1 className={classes.third_heading}>Services</h1>
+        <Service />
+        </div>
+        </div>
+     
+      </div>
+   </div>
+  
 
   </div>
     
