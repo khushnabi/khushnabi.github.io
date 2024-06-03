@@ -2,78 +2,71 @@
 
 
 .timeline_div_container {
-  display: flex;
+  // display: flex;
 }
 
 .my_position {
-  margin-top: 1rem;
+  // margin-top: 1rem;
   font-size: 20px;
     font-weight: bold;
     color: black;
     margin-bottom: -6px;
     letter-spacing: 1px;
 }
-
-.company_section >div{
-  padding-right: 3rem;
+.company_section {
+  // margin-top:2rem;
+  text-align: left;
+  padding: 0.6rem;
+padding-top: 0;
+  padding-left: 1.5rem;
 }
+.company_section li {
+  font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.company_section::before{ 
+  position: absolute;
+  content: '';
+
+  background-color: $primary-color;
+  left: 0rem;
+  height: 100%;
+   width: 2px;
+}
+.company_section::after {
+position: absolute;
+  content: "";
+  background-color: #EB526D;
+  left: -5px;
+  height: 12px;
+  width: 12px;
+  top: 5px;
+  border-radius: 40px;
+}
+  // padding-right: 3rem;
+
 .company_section_odd >div{
-  padding-left: 3rem;
+  // padding-left: 3rem;
   padding-right: 0;
 }
 
-.timeline_empty_div::before {
-  content: "";
-  width: 2px;
-  position: absolute;
-  left: -2px;
-  height: 100%;
-  background: $primary-color;
+// .timeline_empty_div::before {
+//   content: "";
+//   width: 2px;
+//   position: absolute;
+//   left: -2px;
+// }
 
-}
-.timeline_empty_div_odd::before {
-  right: 0 ;
-  left: inherit;
-}
-.company_section::after {
-  content: "";
-  height: 0.7rem;
-  width: 0.7rem;
-  right: 2.4rem;
-  border-radius: 50%;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-    box-shadow: 0px 0px 6px 1px $secondary-color;
-  background: $primary-color;
-}
-
-.company_section_odd::after {
-  left: 2.4rem;
-}
-
-.company_section::before {
-  content: "";
-  height: 3px;
-  width: 3rem;
-  right: 0rem;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  background: $primary-color;
-}
-
-.company_section_odd::before {
-  left: 0rem;
-  height: 3px !important;
-}
+// .company_section_odd::before {
+//   left: 0rem;
+//   height: 3px !important;
+// }
 
 .timeline_div_container >div {
   flex: 1;
   position: relative;
-  text-align: center;
+  // text-align: center;
 
 }
 
@@ -157,11 +150,7 @@
 .timeline_empty_div{
   display: none;
 }
-.company_section::before {
-  left: 0;
-  width: 2rem;
 
-}
 
 .timeline_div_container {
   position: relative;
@@ -177,16 +166,14 @@
 }
 
 .company_section > div {
-  padding-right: 0;
-  padding-left: 3.5rem;
-  padding-bottom: 3rem;
+  // padding-right: 0;
+  // padding-left: 3.5rem;
+  // padding-bottom: 3rem;
 }
 
 
 
 
 
-.company_section::after {
-  left: 2rem;
-}
+
 }
