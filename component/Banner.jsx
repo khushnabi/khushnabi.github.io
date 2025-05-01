@@ -26,7 +26,7 @@ export default function Banner() {
             </a>
           </div>
           <div>
-            <svg
+            {/* <svg
               width="612"
               height="416"
               viewBox="0 0 612 416"
@@ -518,7 +518,7 @@ export default function Banner() {
                   />
                 </filter>
               </defs>
-            </svg>
+            </svg> */}
           </div>
           <div className={`${classes.banner_name} ${classes.mobile} `}>
             <p>Hii, my name is</p>
@@ -1327,7 +1327,7 @@ with my company.</p>
               <div className={classes.contact_info}>
                 <div>
                   <h4 className={classes.contact_name}>Phone</h4>
-                  <p className={classes.contact_detail}>9661937073</p>
+                  {/* <p className={classes.contact_detail}>9661937073</p> */}
                 </div>
                 <div>
                   <h4 className={classes.contact_name}>Email</h4>
